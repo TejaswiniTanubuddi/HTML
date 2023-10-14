@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+		<style>
+			#hyperlink {
+				text-align: right;
+				margin: 20px;
+				text-decoration: none;
+			}
+			.heading {
+				border-bottom: solid;
+				border-color: whiteSmoke;
+				color: FireBrick;
+				font-family: Arial;
+				padding: 25px;
+				font-size: 20px;
+			}
+			td {
+				padding: 13px 15px 13px 25px;
+			}
+			input[type=text] {
+				width: 300%;
+				padding: 5px;
+				border-color: whiteSmoke;
+				border-style: solid;
+			}
+			input[type=submit] {
+				background-color: DodgerBlue;
+				padding: 10px;
+				margin-left: 25px;
+				color: white;
+				border-style: none;
+				margin-top: 20px;
+				border-radius: 3px;
+			}
+			input[type=text]:hover {
+				border-color: dodgerBlue;
+			}
+		</style>
+    </head>
+    <body>	
+		<div id="hyperlink">
+			<a href="C:\Users\rajak\OneDrive\Desktop\ComIT\HTML\index.html">Google</a>
+		</div>
+		<p class="heading">Advanced Search</p>
+		<form class="container" action="https://www.google.com/search">
+			
+			<table>
+				<tr>
+					<td style="font-size:20px;">Find pages with...</td>
+				</tr>
+				<tr>
+					<td>all these words:</td>
+					<td><input type="text" name="q"></td>
+				
+				</tr>
+				<tr>
+					<td>this exact word or phrase:</td>
+					<td><input type="text" name="q"></td>
+				
+				</tr>
+				<tr>
+					<td>any of these words:</td>
+					<td><input type="text" name="q"></td>
+				
+				</tr>
+				<tr>
+					<td>none of these words:</td>
+					<td><input type="text" name="q"></td>
+				
+				</tr>
+			</table>
+			<input type="submit" value="Advanced Search">
+		</form>
+    </body>
+</html>

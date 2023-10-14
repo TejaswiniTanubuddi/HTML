@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+		<style>
+			#box {
+				width: 500px;
+				height: 50px;
+				border-radius: 25px;		
+				margin-bottom: 20px;
+				font-size: 20px;
+				padding: 5px 5px 5px 50px;
+				background-image: url('https://www.w3schools.com/css/searchicon.png');
+				background-position: 15px 20px; 
+				background-repeat: no-repeat;
+			}
+			#hyperlink {
+				text-align: right;
+				margin: 20px;
+				text-decoration: none;
+			}
+			.container{
+				text-align:center;
+				margin-top: 300px;
+			}
+			h1 {
+				font-size: 70px;
+				color: orange;
+				font-weight:bold;
+			}
+			#button {
+				border: none;
+				border-radius: 5px;
+				font-size: 15px;
+				padding: 10px;
+			}
+			#button:hover {
+				background-color: orange;
+				
+			}
+		</style>
+    </head>
+    <body>
+		<div id="hyperlink">	
+			<a href="file:///C:/Users/rajak/OneDrive/Desktop/ComIT/HTML/Images.html">Images</a>
+			&nbsp;
+			<a href="file:///C:/Users/rajak/OneDrive/Desktop/ComIT/HTML/Advanced_search.html">Advanced Search</a>
+		</div>
+        <form class="container" action="https://www.google.com/search">
+			<h1>Search</h1>
+            <div>
+				<input id="box" type="text" name="q">
+			</div>
+			
+			<input id="button" type="submit" value="Google Search">
+			&nbsp;
+			<input id="button" type="submit" value="I’m Feeling Lucky">
+			
+        </form>
+    </body>
+</html>
