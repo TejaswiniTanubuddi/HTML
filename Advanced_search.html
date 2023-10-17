@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+		<meta charset="utf-8" />
         <title>Advanced Search</title>
 		<style>
-			#hyperlink {
+			.hyper-format {
 				text-align: right;
 				margin: 20px;
+			}
+			.hyper-format a {
 				text-decoration: none;
 			}
 			.heading {
@@ -16,19 +19,25 @@
 				padding: 25px;
 				font-size: 20px;
 			}
-			td {
+			.form-row {
 				padding: 13px 15px 13px 25px;
 			}
+			.form-row label {
+				display: inline-block;
+				width: 200px;
+			}
+			p {
+				font-size:20px;
+			}
 			input[type=text] {
-				width: 300%;
-				padding: 5px;
+				width: 30%;
 				border-color: whiteSmoke;
 				border-style: solid;
 			}
 			input[type=submit] {
 				background-color: DodgerBlue;
 				padding: 10px;
-				margin-left: 25px;
+				margin-left: 25px; 
 				color: white;
 				border-style: none;
 				margin-top: 20px;
@@ -40,38 +49,32 @@
 		</style>
     </head>
     <body>	
-		<div id="hyperlink">
-			<a href="C:\Users\rajak\OneDrive\Desktop\ComIT\HTML\index.html">Google</a>
+		<div class="hyper-format">
+			<a href="../HTML/index.html">Google</a>
 		</div>
-		<p class="heading">Advanced Search</p>
-		<form class="container" action="https://www.google.com/search">
-			
-			<table>
-				<tr>
-					<td style="font-size:20px;">Find pages with...</td>
-				</tr>
-				<tr>
-					<td>all these words:</td>
-					<td><input type="text" name="q"></td>
-				
-				</tr>
-				<tr>
-					<td>this exact word or phrase:</td>
-					<td><input type="text" name="q"></td>
-				
-				</tr>
-				<tr>
-					<td>any of these words:</td>
-					<td><input type="text" name="q"></td>
-				
-				</tr>
-				<tr>
-					<td>none of these words:</td>
-					<td><input type="text" name="q"></td>
-				
-				</tr>
-			</table>
+		<h2 class="heading">Advanced Search</h2>
+		<form action="https://www.google.com/search">
+			<div class="form-row">
+				<p>Find pages with...</p>
+			</div>
+			<div class="form-row">
+				<label>all these words:</label>
+				<input type="text" name="q">
+			</div>
+			<div class="form-row">
+				<label>this exact word or phrase:</label>
+				<input type="text" name="q">
+			</div>
+			<div class="form-row">
+				<label>any of these words:</label>
+				<input type="text" name="q">
+			</div>
+			<div class="form-row">
+				<label>none of these words:</label>
+				<input type="text" name="q">
+			</div>
 			<input type="submit" value="Advanced Search">
+			
 		</form>
     </body>
 </html>

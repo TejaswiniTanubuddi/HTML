@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Search</title>
+		<meta charset="utf-8" />
 		<style>
 			#box {
 				width: 500px;
@@ -14,10 +15,13 @@
 				background-position: 15px 20px; 
 				background-repeat: no-repeat;
 			}
-			#hyperlink {
+			.hyper-format {
 				text-align: right;
 				margin: 20px;
+			}
+			.hyper-format a {
 				text-decoration: none;
+				margin-right: 10px;
 			}
 			.container{
 				text-align:center;
@@ -28,23 +32,23 @@
 				color: orange;
 				font-weight:bold;
 			}
-			#button {
+			.button-style {
 				border: none;
 				border-radius: 5px;
 				font-size: 15px;
 				padding: 10px;
+				margin-right: 20px;
 			}
-			#button:hover {
+			.button-style:hover {
 				background-color: orange;
 				
 			}
 		</style>
     </head>
     <body>
-		<div id="hyperlink">	
-			<a href="file:///C:/Users/rajak/OneDrive/Desktop/ComIT/HTML/Images.html">Images</a>
-			&nbsp;
-			<a href="file:///C:/Users/rajak/OneDrive/Desktop/ComIT/HTML/Advanced_search.html">Advanced Search</a>
+		<div class="hyper-format">	
+			<a href="../HTML/Images.html">Images</a>
+			<a href="../HTML/Advanced_search.html">Advanced Search</a>
 		</div>
         <form class="container" action="https://www.google.com/search">
 			<h1>Search</h1>
@@ -52,9 +56,8 @@
 				<input id="box" type="text" name="q">
 			</div>
 			
-			<input id="button" type="submit" value="Google Search">
-			&nbsp;
-			<input id="button" type="submit" value="I’m Feeling Lucky">
+			<input class="button-style" type="submit" value="Google Search">
+			<input class="button-style" type="submit" value="I’m Feeling Lucky">
 			
         </form>
     </body>
